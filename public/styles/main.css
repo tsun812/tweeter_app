@@ -1,0 +1,19 @@
+
+.container  textarea{
+  width: 100%;
+  outline: 0;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid grey;
+}
+
+.new-tweet div{
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee;
+}
+
+.new-tweet div button{
+  background-color: #4056A1;
+  color: white;
+}
