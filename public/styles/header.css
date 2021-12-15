@@ -1,4 +1,6 @@
-header {
+.header_avatar {
+  z-index: -1;
+  margin-top: 10%;
   height: 400px;
   width: 100%;
   background-color: orange;
@@ -7,5 +9,4 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 1;
 }

@@ -1,0 +1,54 @@
+article{
+  box-sizing: border-box;
+  height: 200px;
+  border: 2px solid grey;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+.tweetHistory{
+  height: 100px
+
+}
+
+.tweet-history article header{
+  display: flex;
+  justify-content: space-between;
+}
+.class2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+article header .username{
+  justify-self: end;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.footer-icon{
+  color: #4056A1
+}
+
+.child1:hover{
+  color: orange;
+}
+
+.child2:hover{
+  color: orange;
+}
+
+.child3:hover{
+  color: orange;
+}
+
+
+

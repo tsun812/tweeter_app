@@ -1,16 +1,16 @@
 nav {
+  position: fixed;
+  width:100%;
+  top:0;
   height: 120px;
-  width: 100%;
   background-color: #4056A1;
-  color:  #FFFFFF; 
+  color:  #FFFFFF;
   padding-left: 1.5em;
   padding-right: 1.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative; 
-  z-index: 0;
-  
+
 }
 nav span {
   font-family: Bungee;
@@ -21,7 +21,7 @@ nav span {
   display: flex;
   flex-direction: column;
   align-items: center
-  }
-  nav i {
+}
+nav i {
     color: red
-  }
+}
