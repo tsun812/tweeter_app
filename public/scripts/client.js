@@ -47,30 +47,34 @@ $(document).ready(() => {
   $button = $(".new-tweet, button");
   $button.submit(function (event) {
     event.preventDefault();
+    
+   
     const data = $("new-tweet, form").serialize();
     console.log(data);
-    const $text = $('textarea');
-    const textvalue = $text.val().split(" ").filter(function(str) {
+    let $text = $('textarea');
+    let textvalue = $text.val().split(" ").filter(function(str) {
       return /\S/.test(str);
-    })
+    });
+    if (textvalue.length > 140){
+      $(".new-tweet").prepend("<p class= 'error'>can't exceed 140 characters</p>");
+      return;
+    }
+  
+    console.log(textvalue.length);
+    
+  
   
     $.post('http://localhost:8080/tweets/',  data)
     .done(function() {
+      if (!$(".new-tweet, p").get() === ""){
+        $(".error").remove();
+      }
       loadtweets();
       location.reload();
     })
     .fail(function() {
-      if(textvalue.length === 0){
-      alert( "Can't be blank" );
-      } 
-      else if (textvalue.length > 5){
-        alert("must be 140 characters or less")
-      }
+      $(".new-tweet").prepend("<p class= 'error'>can't be blank</p>");
     })
-  
- });
+  });
     
-
-
-
 })
