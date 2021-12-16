@@ -10,3 +10,12 @@
   justify-content: center;
   position: relative;
 }
+@media only screen and (min-width: 769px) {
+  .header_avatar {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: -2;
+  }
+}
