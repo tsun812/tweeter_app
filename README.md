@@ -4,7 +4,7 @@ Tweeter is a simple single page AJAX-based Twitter clone that uses JQuery, HTML5
 
 ## Final Product
 
-!["Screenshot of Tweeter web app page"](https://github.com/tsun812/tweeter-app/blob/master/docs/tweeterdemo.gif)
+!["Screenshot of Tweeter web app page"](https://github.com/tsun812/tweeter_app/blob/master/docs/tweeterdemo.gif)
 
 ## Dependencies
 
@@ -16,4 +16,3 @@ Tweeter is a simple single page AJAX-based Twitter clone that uses JQuery, HTML5
 ## Getting Started
 
 - Install all dependencies (using the `npm install` command).
-- Run the development web server using the `node express_server.js` command.
