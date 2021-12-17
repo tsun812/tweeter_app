@@ -1,20 +1,20 @@
 
-const loadtweets = function (){
-  $.get( "http://localhost:8080/tweets/", function( dataInput ) {
+const loadtweets = function() {
+  $.get("http://localhost:8080/tweets/", function(dataInput) {
     renderTweets(dataInput);
     
   });
-}
+};
 
 const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
-  for(let i = tweets.length - 1; i >= 0; i--){
+  for (let i = tweets.length - 1; i >= 0; i--) {
     const $curr = createTweetElement(tweets[i]);
     $('.tweet-history').append($curr);
   }
-  }
+};
 
 
 const createTweetElement = function(tweetObj) {
@@ -40,12 +40,12 @@ const createTweetElement = function(tweetObj) {
 </article>`);
   // ...
   return $tweet;
-}
+};
 loadtweets();
 $(document).ready(() => {
   
   $button = $(".new-tweet, button");
-  $button.submit(function (event) {
+  $button.submit(function(event) {
     event.preventDefault();
     
    
@@ -55,26 +55,21 @@ $(document).ready(() => {
     let textvalue = $text.val().split(" ").filter(function(str) {
       return /\S/.test(str);
     });
-    if (textvalue.length > 140){
+    if (textvalue.length > 140) {
       $(".new-tweet").prepend("<p class= 'error'>can't exceed 140 characters</p>");
       return;
     }
-  
-    console.log(textvalue.length);
-    
-  
-  
     $.post('http://localhost:8080/tweets/',  data)
-    .done(function() {
-      if (!$(".new-tweet, p").get() === ""){
-        $(".error").remove();
-      }
-      loadtweets();
-      location.reload();
-    })
-    .fail(function() {
-      $(".new-tweet").prepend("<p class= 'error'>can't be blank</p>");
-    })
+      .done(function() {
+        if (!$(".new-tweet, p").get() === "") {
+          $(".error").remove();
+        }
+        loadtweets();
+        location.reload();
+      })
+      .fail(function() {
+        $(".new-tweet").prepend("<p class= 'error'>can't be blank</p>");
+      });
   });
     
-})
+});

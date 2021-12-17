@@ -1,4 +1,4 @@
-article {
+article{
   box-sizing: border-box;
   height: 250px;
   border: 2px solid grey;
@@ -7,61 +7,63 @@ article {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 10px
 }
-
-.tweetHistory {
+.tweetHistory{
   height: 120px;
   line-height: 60px;
+
 }
 
-.tweet-history article header {
+.tweet-history article header{
   display: flex;
   justify-content: space-between;
 }
-
-.class1 {
+.class1{
   display: flex;
   justify-content: flex-start;
 }
 
-.class1 span {
+.class1 span{
   align-self: center;
 }
-
 .class2 {
   display: flex;
   justify-content: flex-end;
 }
 
-.class2 .username {
+.class2 .username{
   justify-self: start;
   color: gainsboro;
 }
 
-footer {
+footer{
   display: flex;
   justify-content: space-between;
+  
 }
 
-.footer-icon {
-  color: #4056A1;
+.footer-icon{
+  color: #4056A1
 }
 
-.child1:hover {
+.child1:hover{
   color: orange;
   box-shadow: 1px;
   cursor: pointer;
 }
 
-.child2:hover {
+.child2:hover{
   color: orange;
   box-shadow: 1px;
   cursor: pointer;
 }
 
-.child3:hover {
+.child3:hover{
   color: orange;
   box-shadow: 1px;
   cursor: pointer;
 }
+
+
+
