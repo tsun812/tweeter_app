@@ -52,9 +52,7 @@ $(document).ready(() => {
     const data = $("new-tweet, form").serialize();
     console.log(data);
     let $text = $('textarea');
-    let textvalue = $text.val().split(" ").filter(function(str) {
-      return /\S/.test(str);
-    });
+    let textvalue = $text.val().split("");
     if (textvalue.length > 140) {
       $(".new-tweet").prepend("<p class= 'error'>can't exceed 140 characters</p>");
       return;

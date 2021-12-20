@@ -2,11 +2,11 @@ $(document).ready(function() {
   // --- our code goes here ---
   const $text = $('textarea');
   $text.on('input', (event) => {
-    //   // keydown, keyup, keypress, change
-    //   console.log(event.target.value);
-    const textvalue = $text.val().split(" ").filter(function(str) {
-      return /\S/.test(str);
-    });
+    // count by words
+    // const textvalue = $text.val().split(" ").filter(function(str) {
+    //   return /\S/.test(str);
+    // });
+    const textvalue = $text.val().split("");
     let currlength = textvalue.length;
     const $count = $('.counter');
     let currCount = $count.val();
