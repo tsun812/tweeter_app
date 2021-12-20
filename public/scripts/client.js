@@ -28,7 +28,7 @@ const createTweetElement = function(tweetObj) {
     <span class="username">${tweetObj.user.handle}</span>
     </span>
   </header>
-  <textarea name="recentTweet" class="tweetHistory">${tweetObj.content.text}</textarea>
+  <textarea name="recentTweet" class="tweetHistory" readonly="readonly">${tweetObj.content.text}</textarea>
   <footer>
     <span>${timeago.format(tweetObj.created_at)}</span>
     <span class="footer-icon">
