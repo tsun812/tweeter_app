@@ -10,6 +10,11 @@ article {
   padding-right: 10px;
 }
 
+article:hover{
+  cursor: pointer;
+  box-shadow: 3px 5px grey;
+}
+
 .tweetHistory {
   height: 120px;
   line-height: 60px;
@@ -50,18 +55,15 @@ footer {
 
 .child1:hover {
   color: orange;
-  box-shadow: 1px;
   cursor: pointer;
 }
 
 .child2:hover {
   color: orange;
-  box-shadow: 1px;
   cursor: pointer;
 }
 
 .child3:hover {
   color: orange;
-  box-shadow: 1px;
   cursor: pointer;
 }
